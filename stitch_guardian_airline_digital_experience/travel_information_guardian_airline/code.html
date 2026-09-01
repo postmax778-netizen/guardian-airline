@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Travel Information - GUARDIAN AIRLINE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "primary-fixed-dim": "#c6c6c6",
+                            "surface-variant": "#333535",
+                            "tertiary-container": "#000000",
+                            "on-primary-container": "#757575",
+                            "error-container": "#93000a",
+                            "outline": "#988e90",
+                            "surface-tint": "#c6c6c6",
+                            "on-error-container": "#ffdad6",
+                            "on-surface": "#e2e2e2",
+                            "surface-container": "#1e2020",
+                            "on-primary-fixed-variant": "#474747",
+                            "inverse-on-surface": "#2f3131",
+                            "surface-bright": "#37393a",
+                            "background": "#121414",
+                            "primary-fixed": "#e2e2e2",
+                            "on-background": "#e2e2e2",
+                            "surface-container-high": "#282a2b",
+                            "tertiary": "#c8c6c5",
+                            "on-primary-fixed": "#1b1b1b",
+                            "on-secondary-fixed": "#241a00",
+                            "on-surface-variant": "#cfc4c5",
+                            "secondary-container": "#af8d11",
+                            "secondary-fixed-dim": "#e9c349",
+                            "secondary-fixed": "#ffe088",
+                            "on-secondary-container": "#342800",
+                            "on-secondary": "#3c2f00",
+                            "primary": "#c6c6c6",
+                            "surface": "#121414",
+                            "on-primary": "#303030",
+                            "surface-container-lowest": "#0c0f0f",
+                            "tertiary-fixed": "#e5e2e1",
+                            "on-tertiary-fixed-variant": "#474746",
+                            "error": "#ffb4ab",
+                            "on-tertiary-fixed": "#1c1b1b",
+                            "tertiary-fixed-dim": "#c8c6c5",
+                            "on-secondary-fixed-variant": "#574500",
+                            "inverse-primary": "#5e5e5e",
+                            "on-tertiary-container": "#767575",
+                            "secondary": "#e9c349",
+                            "surface-container-highest": "#333535",
+                            "on-tertiary": "#313030",
+                            "surface-container-low": "#1a1c1c",
+                            "on-error": "#690005",
+                            "primary-container": "#000000",
+                            "outline-variant": "#4c4546",
+                            "surface-dim": "#121414",
+                            "inverse-surface": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {
+                            "gutter": "32px",
+                            "section-gap": "160px",
+                            "unit": "8px",
+                            "margin-mobile": "24px",
+                            "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                            "label-caps": [
+                                    "Hanken Grotesk"
+                            ],
+                            "display-lg": [
+                                    "Bodoni Moda"
+                            ],
+                            "headline-lg": [
+                                    "Bodoni Moda"
+                            ],
+                            "body-lg": [
+                                    "Hanken Grotesk"
+                            ],
+                            "mono-technical": [
+                                    "Hanken Grotesk"
+                            ],
+                            "display-mobile": [
+                                    "Bodoni Moda"
+                            ],
+                            "headline-md": [
+                                    "Bodoni Moda"
+                            ],
+                            "body-md": [
+                                    "Hanken Grotesk"
+                            ]
+                    },
+                    "fontSize": {
+                            "label-caps": [
+                                    "12px",
+                                    {
+                                            "lineHeight": "16px",
+                                            "letterSpacing": "0.15em",
+                                            "fontWeight": "600"
+                                    }
+                            ],
+                            "display-lg": [
+                                    "72px",
+                                    {
+                                            "lineHeight": "80px",
+                                            "letterSpacing": "-0.02em",
+                                            "fontWeight": "400"
+                                    }
+                            ],
+                            "headline-lg": [
+                                    "48px",
+                                    {
+                                            "lineHeight": "56px",
+                                            "fontWeight": "400"
+                                    }
+                            ],
+                            "body-lg": [
+                                    "18px",
+                                    {
+                                            "lineHeight": "28px",
+                                            "letterSpacing": "0.01em",
+                                            "fontWeight": "300"
+                                    }
+                            ],
+                            "mono-technical": [
+                                    "14px",
+                                    {
+                                            "lineHeight": "20px",
+                                            "letterSpacing": "0.05em",
+                                            "fontWeight": "500"
+                                    }
+                            ],
+                            "display-mobile": [
+                                    "42px",
+                                    {
+                                            "lineHeight": "48px",
+                                            "letterSpacing": "-0.01em",
+                                            "fontWeight": "400"
+                                    }
+                            ],
+                            "headline-md": [
+                                    "32px",
+                                    {
+                                            "lineHeight": "40px",
+                                            "fontWeight": "400"
+                                    }
+                            ],
+                            "body-md": [
+                                    "16px",
+                                    {
+                                            "lineHeight": "24px",
+                                            "fontWeight": "400"
+                                    }
+                            ]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .ghost-shadow {
+            box-shadow: 0px 20px 50px rgba(0,0,0,0.8);
+        }
+        .gold-stroke {
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .gold-stroke-b {
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .glass-overlay {
+            backdrop-filter: blur(20px);
+            background: rgba(26, 26, 26, 0.8);
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            background-color: #0D0D0D;
+        }
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        details[open] .faq-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-secondary-container/20 shadow-[0px_20px_50px_rgba(0,0,0,0.8)]">
+<div class="flex justify-between items-center max-w-[1440px] mx-auto px-margin-desktop py-6">
+<a class="font-display-lg text-headline-md tracking-tighter text-primary" href="#">GUARDIAN AIRLINE</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 duration-300" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 duration-300" href="#">About Guardian</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 duration-300" href="#">The Griffin's Promise</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 duration-300" href="#">Exclusive Services</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 duration-300" href="#">La Table du Griffon</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 duration-300" href="#">Destinations</a>
+<!-- We consider Travel Information not a top level nav item in the top bar but a page itself, keeping standard nav -->
+</div>
+<div class="hidden md:flex">
+<button class="bg-white text-black font-label-caps text-label-caps px-6 py-3 rounded-DEFAULT hover:opacity-80 transition-all duration-300 scale-95 active:scale-90">Request a Private Journey</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="pt-[160px] pb-section-gap relative">
+<div class="max-w-[1440px] mx-auto px-margin-desktop grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-8 z-10">
+<h1 class="font-display-lg text-display-mobile md:text-display-lg text-primary mb-6">Travel Information</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Impeccable preparation is the hallmark of a Guardian journey. We curate every detail of your passage, ensuring seamless transitions from origin to destination. Review our comprehensive guide to your upcoming experience.
+                </p>
+</div>
+</div>
+<!-- Decorative subtle line -->
+<div class="absolute bottom-0 left-margin-desktop right-margin-desktop h-px bg-secondary-container/20"></div>
+</header>
+<main>
+<!-- Before Your Journey -->
+<section class="py-section-gap">
+<div class="max-w-[1440px] mx-auto px-margin-desktop">
+<div class="grid grid-cols-12 gap-gutter mb-16">
+<div class="col-span-12 md:col-span-4">
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-secondary">01. Before Your Journey</h2>
+<div class="w-12 h-px bg-secondary mt-8 mb-4"></div>
+<p class="font-body-md text-body-md text-on-surface-variant">The foundation of a flawless flight begins long before departure. Ensure your documentation and preliminary steps meet our exacting standards.</p>
+</div>
+<div class="col-span-12 md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="p-8 gold-stroke bg-[#1A1A1A] hover-lift">
+<span class="material-symbols-outlined text-secondary mb-4" style="font-variation-settings: 'FILL' 0;">description</span>
+<h3 class="font-label-caps text-label-caps text-primary mb-2">Required Documents</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Government-issued identification matching passenger manifest exactly. For international flights, specific transit documentation.</p>
+</div>
+<div class="p-8 gold-stroke bg-[#1A1A1A] hover-lift">
+<span class="material-symbols-outlined text-secondary mb-4" style="font-variation-settings: 'FILL' 0;">downloading</span>
+<h3 class="font-label-caps text-label-caps text-primary mb-2">Passport &amp; Visa</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Passports must remain valid for 6 months beyond intended return. Visas are the responsibility of the traveler; Guardian concierge can advise.</p>
+</div>
+<div class="p-8 gold-stroke bg-[#1A1A1A] hover-lift">
+<span class="material-symbols-outlined text-secondary mb-4" style="font-variation-settings: 'FILL' 0;">how_to_reg</span>
+<h3 class="font-label-caps text-label-caps text-primary mb-2">Private Check-in</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Check-in occurs at our private terminal annexes. Dedicated staff handle baggage processing directly from your vehicle.</p>
+</div>
+<div class="p-8 gold-stroke bg-[#1A1A1A] hover-lift">
+<span class="material-symbols-outlined text-secondary mb-4" style="font-variation-settings: 'FILL' 0;">flight_land</span>
+<h3 class="font-label-caps text-label-caps text-primary mb-2">Arrival Timing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We recommend arrival 45 minutes prior to scheduled departure to allow for relaxed boarding and pre-flight amenities.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Divider -->
+<div class="max-w-[1440px] mx-auto px-margin-desktop">
+<div class="w-full h-px bg-secondary-container/20"></div>
+</div>
+<!-- FAQ Section -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-[1440px] mx-auto px-margin-desktop">
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-4">
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-secondary">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4">Clarifications on our policies and procedures to ensure a perfect journey.</p>
+</div>
+<div class="col-span-12 md:col-span-8">
+<div class="flex flex-col gap-4">
+<details class="group bg-[#1A1A1A] gold-stroke overflow-hidden transition-all duration-300">
+<summary class="flex justify-between items-center p-6 cursor-pointer font-body-lg text-body-lg text-primary select-none">
+                                    Can I bring my pet on board?
+                                    <span class="material-symbols-outlined text-secondary faq-icon" style="font-variation-settings: 'FILL' 0;">keyboard_arrow_down</span>
+</summary>
+<div class="px-6 pb-6 font-body-md text-body-md text-on-surface-variant border-t border-secondary-container/20 pt-4">
+                                    Guardian Airline accommodates well-behaved pets in the cabin under specific guidelines. Advance notice of 48 hours is required, and strict health documentation must be provided.
+                                </div>
+</details>
+<details class="group bg-[#1A1A1A] gold-stroke overflow-hidden transition-all duration-300">
+<summary class="flex justify-between items-center p-6 cursor-pointer font-body-lg text-body-lg text-primary select-none">
+                                    What is the cancellation policy?
+                                    <span class="material-symbols-outlined text-secondary faq-icon" style="font-variation-settings: 'FILL' 0;">keyboard_arrow_down</span>
+</summary>
+<div class="px-6 pb-6 font-body-md text-body-md text-on-surface-variant border-t border-secondary-container/20 pt-4">
+                                    Journeys may be canceled or rescheduled without penalty up to 72 hours prior to departure. Modifications within 72 hours are subject to a concierge fee.
+                                </div>
+</details>
+<details class="group bg-[#1A1A1A] gold-stroke overflow-hidden transition-all duration-300">
+<summary class="flex justify-between items-center p-6 cursor-pointer font-body-lg text-body-lg text-primary select-none">
+                                    Are dietary restrictions accommodated?
+                                    <span class="material-symbols-outlined text-secondary faq-icon" style="font-variation-settings: 'FILL' 0;">keyboard_arrow_down</span>
+</summary>
+<div class="px-6 pb-6 font-body-md text-body-md text-on-surface-variant border-t border-secondary-container/20 pt-4">
+                                    Absolutely. La Table du Griffon crafts bespoke menus for every flight. Please inform your concierge of any allergies or preferences at least 24 hours prior to your journey.
+                                </div>
+</details>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-secondary-container/10">
+<div class="grid grid-cols-12 gap-gutter max-w-[1440px] mx-auto px-margin-desktop">
+<div class="col-span-12 md:col-span-4">
+<div class="font-display-lg text-headline-lg text-primary mb-8">GUARDIAN AIRLINE</div>
+<p class="font-body-md text-body-md text-secondary opacity-100 hover:opacity-70 transition-colors">© 2024 GUARDIAN AIRLINE. ALL RIGHTS RESERVED. DISCRETION GUARANTEED.</p>
+</div>
+<div class="col-span-12 md:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">About Guardian</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">The Griffin's Promise</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Exclusive Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">La Table du Griffon</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Destinations</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-primary transition-colors" href="#">Travel Information</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

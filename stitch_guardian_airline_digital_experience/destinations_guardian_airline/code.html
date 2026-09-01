@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Destinations - GUARDIAN AIRLINE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#c6c6c6",
+                        "surface-variant": "#333535",
+                        "tertiary-container": "#000000",
+                        "on-primary-container": "#757575",
+                        "error-container": "#93000a",
+                        "outline": "#988e90",
+                        "surface-tint": "#c6c6c6",
+                        "on-error-container": "#ffdad6",
+                        "on-surface": "#e2e2e2",
+                        "surface-container": "#1e2020",
+                        "on-primary-fixed-variant": "#474747",
+                        "inverse-on-surface": "#2f3131",
+                        "surface-bright": "#37393a",
+                        "background": "#121414",
+                        "primary-fixed": "#e2e2e2",
+                        "on-background": "#e2e2e2",
+                        "surface-container-high": "#282a2b",
+                        "tertiary": "#c8c6c5",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-secondary-fixed": "#241a00",
+                        "on-surface-variant": "#cfc4c5",
+                        "secondary-container": "#af8d11",
+                        "secondary-fixed-dim": "#e9c349",
+                        "secondary-fixed": "#ffe088",
+                        "on-secondary-container": "#342800",
+                        "on-secondary": "#3c2f00",
+                        "primary": "#c6c6c6",
+                        "surface": "#121414",
+                        "on-primary": "#303030",
+                        "surface-container-lowest": "#0c0f0f",
+                        "tertiary-fixed": "#e5e2e1",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-secondary-fixed-variant": "#574500",
+                        "inverse-primary": "#5e5e5e",
+                        "on-tertiary-container": "#767575",
+                        "secondary": "#e9c349",
+                        "surface-container-highest": "#333535",
+                        "on-tertiary": "#313030",
+                        "surface-container-low": "#1a1c1c",
+                        "on-error": "#690005",
+                        "primary-container": "#000000",
+                        "outline-variant": "#4c4546",
+                        "surface-dim": "#121414",
+                        "inverse-surface": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "section-gap": "160px",
+                        "unit": "8px",
+                        "margin-mobile": "24px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Hanken Grotesk"],
+                        "display-lg": ["Bodoni Moda"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "mono-technical": ["Hanken Grotesk"],
+                        "display-mobile": ["Bodoni Moda"],
+                        "headline-md": ["Bodoni Moda"],
+                        "body-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "300" }],
+                        "mono-technical": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "display-mobile": ["42px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #121414;
+            color: #e2e2e2;
+        }
+        .golden-stroke {
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .vault-card {
+            background-color: #1A1A1A;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .ghost-shadow {
+            box-shadow: 0px 20px 50px rgba(0,0,0,0.8);
+        }
+        .glass-nav {
+            background: rgba(18, 20, 20, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .btn-primary {
+            background-color: #ffffff;
+            color: #000000;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: scale(1.02);
+            opacity: 0.9;
+        }
+        .btn-ghost {
+            background-color: transparent;
+            color: #D4AF37;
+            border: 1px solid #D4AF37;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+        .btn-ghost:hover {
+            background-color: rgba(212, 175, 55, 0.1);
+        }
+        /* Custom scrollbar for horizontal lists */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-lg">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-secondary-container/20 shadow-[0px_20px_50px_rgba(0,0,0,0.8)]">
+<div class="flex justify-between items-center max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-6">
+<a class="font-display-lg text-headline-md tracking-tighter text-primary" href="#">GUARDIAN AIRLINE</a>
+<div class="hidden md:flex gap-8 items-center font-label-caps text-label-caps">
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">Home</a>
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">About Guardian</a>
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">The Griffin's Promise</a>
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">Exclusive Services</a>
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">La Table du Griffon</a>
+<a class="text-secondary border-b border-secondary pb-1 hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">Destinations</a>
+</div>
+<button class="hidden md:block btn-primary font-label-caps text-label-caps px-6 py-3 uppercase">Request a Private Journey</button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[120px]">
+<!-- Hero Section -->
+<header class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pt-16 pb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 md:col-start-3 text-center">
+<h1 class="font-display-mobile md:font-display-lg text-display-mobile md:text-display-lg text-primary mb-6">The World, Secured.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                        Curated destinations where business meets discovery. Experience unparalleled privacy and elegance from departure to arrival.
+                    </p>
+</div>
+</div>
+<!-- Filters -->
+<div class="mt-16 border-y border-secondary-container/20 py-4">
+<ul class="flex flex-nowrap overflow-x-auto hide-scrollbar gap-8 justify-center font-label-caps text-label-caps">
+<li><a class="text-secondary border-b border-secondary pb-1 whitespace-nowrap" href="#">All Regions</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="#">Europe</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="#">Middle East</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="#">Asia</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="#">North America</a></li>
+</ul>
+</div>
+</header>
+<!-- Featured Section -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 mb-8 md:mb-0">
+<p class="font-label-caps text-label-caps text-secondary mb-4 uppercase">Featured Experience</p>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Where Business Meets Discovery</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                        Our flagship routes are designed for the discerning traveler who requires absolute discretion and seamless efficiency between global financial hubs and cultural epicenters.
+                    </p>
+<button class="btn-ghost font-label-caps text-label-caps px-6 py-3 uppercase">View Exclusive Itineraries</button>
+</div>
+<div class="md:col-span-6 md:col-start-7 relative">
+<div class="vault-card p-2 relative z-10 ghost-shadow">
+<img class="w-full h-auto aspect-video object-cover" data-alt="A highly detailed, cinematic wide shot of a sleek private jet soaring over the ultra-modern skyline of Dubai at dusk. The lighting is moody and dramatic, with the golden hour sun reflecting off the jet's polished metallic surface and the towering skyscrapers below. Deep charcoal skies contrast with the warm, glowing city lights, emphasizing a minimalist, high-end editorial style perfectly aligned with a luxury travel aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6UFaww14wjg6oI_f9dYIP2SUIONIFmyFMdXHrP8rGBk_Nyj4Rbx4SeAithzdtlhrSYpdW3pnLdEpWAVEp5t5TOji_4qnxpAQ1_HbLQiGLR1oOF4uNbiXLjgluJ0MzBXxy7eIPoqRKoJF_qGONeTkRtibg-YalCsBrHvY1hV9M6oz3vryD_y_qz-S_mnhecS-I904FydOZW-_JtaVfVevMM-17aB5bcXfJYDB7J7JIKK7-hPDUyOVn"/>
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-8 -left-8 w-32 h-32 border border-secondary/20 z-0 hidden md:block"></div>
+</div>
+</div>
+</section>
+<!-- Destination Grid -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Card 1: Paris -->
+<article class="vault-card group cursor-pointer hover:bg-[#0D0D0D] transition-colors duration-500">
+<div class="relative overflow-hidden aspect-[4/3]">
+<img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105 transform" data-alt="An elegant, moody editorial photograph of the Eiffel Tower at night, partially obscured by mist, viewed from a private, luxurious balcony. The scene is bathed in a sophisticated palette of deep blacks and subtle, warm gold lighting from the street lamps. The composition uses generous negative space to evoke a sense of quiet exclusivity and French elegance, fitting for a high-net-worth individual's private travel catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgjBuKcQgKtSDJRB4lkq3OaF5eVBrNyjeVkgPHv5x2KWcNB0HeI0Am0JmMAkAGUPtLhTGBZ5Z-SIRAqW9HhHDTKUMWLotog_L2LkWWhxe_DICO6BQv66c6B5RinUHRUCXrCH1g9I3NPXQp8TQRbOMSLpcFbgudBbi06z1bmBLAcs-cPqUAdgWeK-22FlZJKR608mi7-xA6UP2xAYK5vbSKJMDc1ys0-b56AYhP5b54dkduI-GfQ1z4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="flex justify-between items-end">
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-2 uppercase">France</p>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Paris</h3>
+</div>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-x-[-10px] group-hover:translate-x-0">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="p-8 border-t border-secondary-container/10">
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                            The epitome of French elegance. A nexus of high fashion, culinary mastery, and discreet luxury.
+                        </p>
+<button class="font-label-caps text-label-caps text-primary hover:text-secondary uppercase transition-colors flex items-center gap-2">
+                            Explore Destination
+                        </button>
+</div>
+</article>
+<!-- Card 2: London -->
+<article class="vault-card group cursor-pointer hover:bg-[#0D0D0D] transition-colors duration-500">
+<div class="relative overflow-hidden aspect-[4/3]">
+<img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105 transform" data-alt="A cinematic, high-contrast image of the London skyline featuring the Shard and the River Thames at twilight. The scene is defined by deep charcoal tones and sharp, metallic reflections on the water. The aesthetic is strictly minimalist and editorial, capturing the essence of global finance and timeless British sophistication without typical tourist clutter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBASsrywyO-6wEMgmm2YIfZ8Pd3_61cd-G3E13QaKLb2ZG5iuwmcECDwVtjIFM4KtgprdQv2febqOoqV0uUhB8x8xcQFUgPNB6tiVdFrCgZ6_LszOv9x2EClzhyA1EPI38YKd3BkcqFZowIyQ9Eo3qJko_2EUO29pDASu_69Oss__jYYGLtJopRI6JjEVQ3uc15nMKu2jKMUoeATBfUmzIXyCKrFHHlBbmhPRJ01GO4eYCllNPtsF5Y"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="flex justify-between items-end">
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-2 uppercase">United Kingdom</p>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">London</h3>
+</div>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-x-[-10px] group-hover:translate-x-0">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="p-8 border-t border-secondary-container/10">
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                            A global powerhouse where historic tradition meets modern financial prowess.
+                        </p>
+<button class="font-label-caps text-label-caps text-primary hover:text-secondary uppercase transition-colors flex items-center gap-2">
+                            Explore Destination
+                        </button>
+</div>
+</article>
+<!-- Card 3: Dubai -->
+<article class="vault-card group cursor-pointer hover:bg-[#0D0D0D] transition-colors duration-500 mt-0 md:mt-16">
+<div class="relative overflow-hidden aspect-[4/3]">
+<img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105 transform" data-alt="A striking architectural detail shot of an ultra-modern skyscraper in Dubai, focusing on sleek glass and steel lines against a deep, dark sky. The image utilizes significant negative space and minimal 1px gold metallic accents to convey a sense of structural rigidity, luxury, and absolute security. The style is strictly editorial, avoiding wide cityscapes in favor of abstracted, premium textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHnGEJDhoar23QPQN0HylgbOkCpj9cQUAlPiMoO5ZruBSfO4NlyS2opLuFKjH4OyKsoSqBUiYRIH3OzUr27ETFFL3wTldLD4Ixiq_XTXoav_xcddiYgs2NLpN4Ntl4zZQdPHliBPahRum2OZvIpT_i3BfPV1852opFONiX2crevYm26YBmyf5k9Yl3ZRw51K8zkHTMJrW46jBeVrJiBYuszqtnsAmrdb--K3Ex9DbJdnYstL2tWZfG"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="flex justify-between items-end">
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-2 uppercase">United Arab Emirates</p>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Dubai</h3>
+</div>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-x-[-10px] group-hover:translate-x-0">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="p-8 border-t border-secondary-container/10">
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                            An oasis of futuristic luxury and unparalleled ambition in the heart of the Middle East.
+                        </p>
+<button class="font-label-caps text-label-caps text-primary hover:text-secondary uppercase transition-colors flex items-center gap-2">
+                            Explore Destination
+                        </button>
+</div>
+</article>
+<!-- Card 4: New York -->
+<article class="vault-card group cursor-pointer hover:bg-[#0D0D0D] transition-colors duration-500">
+<div class="relative overflow-hidden aspect-[4/3]">
+<img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105 transform" data-alt="A cinematic, low-angle shot of a sleek New York City skyscraper towering into a dark, overcast sky. The image is dominated by charcoal grey tones with very subtle, warm light escaping from a single, high-floor executive window. The composition is highly disciplined and asymmetrical, reflecting a minimalist editorial style that emphasizes power, discretion, and quiet luxury in a major financial hub." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSBc0UDq3KZoLr4u7GlVKFhCZiH0sRqWc0EvFGrzBSyemtXpSi0rbNopQZ4khsVxlIY06VrV6yeuFbuSB9ZmmUojswPtrCK9eSgqYsagz10EHBvRTRYjoIIzdsuZjokYwVvl8JmMtnaCvXho2inXzlq842hH6c0wUjsse555uL7dacnGaUcCIv5uGVab2Sxua3WLD0mTPlu2-17pPQqf5c-yS3HSBkRH_5-zieP-XGL9ZlbarNrHAI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="flex justify-between items-end">
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-2 uppercase">United States</p>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">New York</h3>
+</div>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-x-[-10px] group-hover:translate-x-0">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="p-8 border-t border-secondary-container/10">
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                            The epicenter of global commerce, where every moment is a negotiation of prestige.
+                        </p>
+<button class="font-label-caps text-label-caps text-primary hover:text-secondary uppercase transition-colors flex items-center gap-2">
+                            Explore Destination
+                        </button>
+</div>
+</article>
+<!-- Additional Destinations can follow the same pattern -->
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap border-t border-secondary-container/10 bg-surface-container-lowest grid grid-cols-12 gap-gutter max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop flat no shadows opacity-100 hover:opacity-70">
+<div class="col-span-12 md:col-span-4 mb-12 md:mb-0">
+<h2 class="font-display-lg text-headline-lg text-primary mb-8">GUARDIAN AIRLINE</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 max-w-sm">
+                Elevating the art of private aviation. Discretion guaranteed.
+            </p>
+<div class="flex gap-4">
+<!-- Watermark Griffin Symbol -->
+<div class="w-12 h-12 border border-secondary/20 rounded-full flex items-center justify-center opacity-50">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 0;">flight_takeoff</span>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-8">
+<div>
+<ul class="flex flex-col gap-4 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary" href="#">Home</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary" href="#">About Guardian</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary" href="#">The Griffin's Promise</a></li>
+</ul>
+</div>
+<div>
+<ul class="flex flex-col gap-4 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary" href="#">Exclusive Services</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary" href="#">La Table du Griffon</a></li>
+<li><a class="text-primary hover:text-secondary transition-colors" href="#">Destinations</a></li>
+</ul>
+</div>
+<div>
+<ul class="flex flex-col gap-4 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary" href="#">Travel Information</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary" href="#">Contact</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="col-span-12 mt-16 pt-8 border-t border-secondary-container/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-mono-technical text-mono-technical text-on-surface-variant text-sm">
+                © 2024 GUARDIAN AIRLINE. ALL RIGHTS RESERVED. DISCRETION GUARANTEED.
+            </p>
+</div>
+</footer>
+</body></html>

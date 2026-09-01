@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guardian Airline - Exclusive Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#c6c6c6",
+                        "surface-variant": "#333535",
+                        "tertiary-container": "#000000",
+                        "on-primary-container": "#757575",
+                        "error-container": "#93000a",
+                        "outline": "#988e90",
+                        "surface-tint": "#c6c6c6",
+                        "on-error-container": "#ffdad6",
+                        "on-surface": "#e2e2e2",
+                        "surface-container": "#1e2020",
+                        "on-primary-fixed-variant": "#474747",
+                        "inverse-on-surface": "#2f3131",
+                        "surface-bright": "#37393a",
+                        "background": "#121414",
+                        "primary-fixed": "#e2e2e2",
+                        "on-background": "#e2e2e2",
+                        "surface-container-high": "#282a2b",
+                        "tertiary": "#c8c6c5",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-secondary-fixed": "#241a00",
+                        "on-surface-variant": "#cfc4c5",
+                        "secondary-container": "#af8d11",
+                        "secondary-fixed-dim": "#e9c349",
+                        "secondary-fixed": "#ffe088",
+                        "on-secondary-container": "#342800",
+                        "on-secondary": "#3c2f00",
+                        "primary": "#c6c6c6",
+                        "surface": "#121414",
+                        "on-primary": "#303030",
+                        "surface-container-lowest": "#0c0f0f",
+                        "tertiary-fixed": "#e5e2e1",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-secondary-fixed-variant": "#574500",
+                        "inverse-primary": "#5e5e5e",
+                        "on-tertiary-container": "#767575",
+                        "secondary": "#e9c349",
+                        "surface-container-highest": "#333535",
+                        "on-tertiary": "#313030",
+                        "surface-container-low": "#1a1c1c",
+                        "on-error": "#690005",
+                        "primary-container": "#000000",
+                        "outline-variant": "#4c4546",
+                        "surface-dim": "#121414",
+                        "inverse-surface": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "section-gap": "160px",
+                        "unit": "8px",
+                        "margin-mobile": "24px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Hanken Grotesk"],
+                        "display-lg": ["Bodoni Moda"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "mono-technical": ["Hanken Grotesk"],
+                        "display-mobile": ["Bodoni Moda"],
+                        "headline-md": ["Bodoni Moda"],
+                        "body-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "300" }],
+                        "mono-technical": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "display-mobile": ["42px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.background'); color: theme('colors.on-background'); }
+        .ghost-button { border: 1px solid theme('colors.secondary'); color: theme('colors.secondary'); background: transparent; transition: all 0.3s ease; }
+        .ghost-button:hover { background: theme('colors.secondary-container'); color: theme('colors.on-secondary-container'); border-color: transparent; }
+        .primary-button { background: theme('colors.primary'); color: theme('colors.on-primary'); transition: all 0.3s ease; }
+        .primary-button:hover { opacity: 0.9; transform: scale(1.02); }
+        .gold-divider { height: 1px; background-color: theme('colors.secondary'); opacity: 0.2; width: 100%; }
+        .card-vault { background: transparent; border: 1px solid #1A1A1A; transition: background 0.4s ease; }
+        .card-vault:hover { background: #0D0D0D; }
+        .glass-nav { backdrop-filter: blur(20px); background: rgba(18, 20, 20, 0.8); border-bottom: 1px solid rgba(233, 195, 73, 0.1); }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 glass-nav shadow-[0px_20px_50px_rgba(0,0,0,0.8)]">
+<div class="flex justify-between items-center max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-6">
+<div class="font-display-lg text-headline-md tracking-tighter text-primary">
+                GUARDIAN AIRLINE
+            </div>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex items-center gap-8 font-label-caps text-label-caps">
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors scale-95 active:scale-90" href="#">Home</a>
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors scale-95 active:scale-90" href="#">About Guardian</a>
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors scale-95 active:scale-90" href="#">The Griffin's Promise</a>
+<a class="text-secondary border-b border-secondary pb-1 scale-95 active:scale-90 transition-transform" href="#">Exclusive Services</a>
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors scale-95 active:scale-90" href="#">La Table du Griffon</a>
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors scale-95 active:scale-90" href="#">Destinations</a>
+</nav>
+<div class="hidden md:block">
+<button class="primary-button px-6 py-3 font-label-caps text-label-caps rounded-DEFAULT scale-95 active:scale-90 transition-transform">Request a Private Journey</button>
+</div>
+<!-- Mobile Menu Toggle (Visual Only) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow pt-32 pb-section-gap">
+<!-- Hero Section -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop mt-12 mb-section-gap relative">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 z-10 relative">
+<h1 class="font-display-lg text-display-mobile md:text-display-lg text-primary mb-6 leading-tight">Beyond Flight.<br/>Absolute Sanctuary.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-md">Experience the pinnacle of discreet travel. Our exclusive services are engineered for those who require uncompromising security fused with effortless Parisian elegance.</p>
+</div>
+<div class="md:col-span-7 relative h-[614px] min-h-[400px]">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full rounded-lg" data-alt="A cinematic wide shot of a highly luxurious private jet interior, designed with sleek charcoal panels, warm ambient lighting, and subtle gold accents. The atmosphere is quiet, exclusive, and impenetrable, evoking a high-security French vault crossed with a five-star lounge. Perfect minimalist composition, deep shadows, high-end editorial photography." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDIKjEeBZdpiJ7DLLZ-AUJkUK_yUoZQbeFKdid3Um8TtL6gIzt_iMTub1IXFpg-PPvDMkslU5ZEJOHxKolzAizc0s_di7OmhbzliZaIHGeItrhH9caBbhJ-VaSPfSvQSHZpFQ7FveWpYLYFI5Wc37qc6yb-1auG-UH6nGgRythHvRM6rMsMpxciH4wYa3MN9kti0vwB7urvXEa6mrY6o3fb7-OtBWtePgT2VLRH5-AMk-3uuFbur_6P')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-transparent"></div>
+</div>
+</div>
+</section>
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop mb-16">
+<div class="gold-divider"></div>
+</div>
+<!-- Service Cards Bento Grid -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-16 text-center md:text-left">Signature Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Discreet Terminal Access -->
+<div class="md:col-span-8 card-vault rounded-lg p-8 md:p-12 relative overflow-hidden group min-h-[400px] flex flex-col justify-end">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full opacity-40 group-hover:opacity-60 transition-opacity duration-700" data-alt="A close-up shot of a sophisticated biometric security scanner at a private terminal entrance. Sleek black glass, a subtle glowing interface with minimal data points, and a thin gold border. The mood is highly secure, modern, and discreet, bathed in low-key lighting with sharp focus on the technology." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB0ec0HWXpih-JR5416dPYMvM9m8GQ9GOo7zBGz4QaJz5BfQqGi8pG4LKOjEerhZcYUzGF5a6jpNgPAyzug1tjESnBOtlbWd17rxktXs3nV5jVkWS3CFe0TQFv-44VMDRdwMtCipYAPLE7CGO__8EyYauJxnNN3JLk6GURQdUccIlbZLq11XoxZ9Varvm8QVo9cyIRzPhbR_tw4Yv9RKTPXPFqkoEA2hs9TaeZ0yIqW361gblQn3lVv')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#000000] via-[#000000]/50 to-transparent"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-secondary mb-4 text-4xl" data-icon="vpn_key">vpn_key</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Discreet Terminal Access</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">Bypass public scrutiny entirely. Arrive via private subterranean entrances and board directly from secure, unlisted lounges.</p>
+</div>
+</div>
+<!-- Encrypted Connectivity -->
+<div class="md:col-span-4 card-vault rounded-lg p-8 md:p-12 relative overflow-hidden group min-h-[400px] flex flex-col justify-end">
+<div class="absolute inset-0 bg-surface-container-low opacity-50 group-hover:bg-[#0D0D0D] transition-colors duration-500"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-secondary mb-4 text-4xl" data-icon="enhanced_encryption">enhanced_encryption</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Encrypted Connectivity</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Military-grade, end-to-end encrypted Wi-Fi networks ensure your communications remain inviolable at 40,000 feet.</p>
+</div>
+</div>
+<!-- Bespoke French Gastronomy -->
+<div class="md:col-span-4 card-vault rounded-lg p-8 md:p-12 relative overflow-hidden group min-h-[400px] flex flex-col justify-end">
+<div class="absolute inset-0 bg-surface-container-low opacity-50 group-hover:bg-[#0D0D0D] transition-colors duration-500"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-secondary mb-4 text-4xl" data-icon="restaurant">restaurant</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Bespoke Gastronomy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Curated menus by Michelin-starred chefs, paired with rare vintages from our private cellar, served with absolute discretion.</p>
+</div>
+</div>
+<!-- Elite Protection -->
+<div class="md:col-span-8 card-vault rounded-lg p-8 md:p-12 relative overflow-hidden group min-h-[400px] flex flex-col justify-end">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full opacity-40 group-hover:opacity-60 transition-opacity duration-700" data-alt="A subtle, shadowy detail shot of a close-protection officer in a perfectly tailored dark suit standing near a sleek jet door. The focus is on the texture of the suit and a discreet earpiece. The lighting is cinematic, highlighting the gold trim of the aircraft door frame against deep charcoal tones, conveying elite security and understated luxury." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAtyfyPGN1hMVv1Ix5hc1FFuwfHaK9uVSjP_kS5Rnub7nmWnYPcAnNWqoZbtXivulKYP2x-eNv5lW0j92mT-VSq5bW5EPSs81rHIr5RjMerwVZodog4ASrNpEyvv9Pry0nwyZ0CkiZGfXKICCFsFLYJRB3T7cQg7VsYmIEGVclwhAKUGJOu5S-WlbMd7XvV-cXakjfWk2HEIETakuBcrKoWb0-zs8wfcIH2Hs5zjhsjuQ2IQ5fc63zC')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#000000] via-[#000000]/50 to-transparent"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-secondary mb-4 text-4xl" data-icon="security">security</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Elite Protection Details</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">Highly trained, unobtrusive close-protection specialists available upon request to accompany you throughout your journey.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Additional Features List -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">Uncompromising Details</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Every aspect of the Guardian Airline experience is meticulously calibrated to provide peace of mind and unparalleled comfort.</p>
+<button class="ghost-button px-6 py-3 font-label-caps text-label-caps rounded-DEFAULT">View Full Manifesto</button>
+</div>
+<div class="flex flex-col gap-6">
+<!-- Feature Item -->
+<div class="flex items-center gap-4">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="font-mono-technical text-mono-technical text-on-surface tracking-widest uppercase">Private Boarding Protocol</span>
+</div>
+<div class="gold-divider"></div>
+<!-- Feature Item -->
+<div class="flex items-center gap-4">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="font-mono-technical text-mono-technical text-on-surface tracking-widest uppercase">Priority Ground Logistics</span>
+</div>
+<div class="gold-divider"></div>
+<!-- Feature Item -->
+<div class="flex items-center gap-4">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="font-mono-technical text-mono-technical text-on-surface tracking-widest uppercase">Dedicated Executive Assistant</span>
+</div>
+<div class="gold-divider"></div>
+<!-- Feature Item -->
+<div class="flex items-center gap-4">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="font-mono-technical text-mono-technical text-on-surface tracking-widest uppercase">Premium Sanctum Cabin</span>
+</div>
+<div class="gold-divider"></div>
+<!-- Feature Item -->
+<div class="flex items-center gap-4">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="font-mono-technical text-mono-technical text-on-surface tracking-widest uppercase">Curated In-Flight Media</span>
+</div>
+<div class="gold-divider"></div>
+<!-- Feature Item -->
+<div class="flex items-center gap-4">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="font-mono-technical text-mono-technical text-on-surface tracking-widest uppercase">Global High-Speed Uplink</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-secondary-container/10">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="md:col-span-4 flex flex-col justify-between">
+<div>
+<h2 class="font-display-lg text-headline-lg text-primary mb-8 tracking-tighter">GUARDIAN AIRLINE</h2>
+<p class="font-body-md text-body-md text-secondary max-w-xs mb-8">Absolute sanctuary above the clouds.</p>
+</div>
+<p class="font-body-md text-body-md text-secondary opacity-50 mt-12 md:mt-0">
+                    © 2024 GUARDIAN AIRLINE. ALL RIGHTS RESERVED. DISCRETION GUARANTEED.
+                </p>
+</div>
+<div class="md:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+<!-- Column 1 -->
+<div class="flex flex-col gap-4 font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">About Guardian</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">The Griffin's Promise</a>
+</div>
+<!-- Column 2 -->
+<div class="flex flex-col gap-4 font-body-md text-body-md">
+<a class="text-primary opacity-100 hover:opacity-70" href="#">Exclusive Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">La Table du Griffon</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">Destinations</a>
+</div>
+<!-- Column 3 -->
+<div class="flex flex-col gap-4 font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">Travel Information</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">Contact</a>
+</div>
+<!-- Column 4 -->
+<div class="flex flex-col gap-4 font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

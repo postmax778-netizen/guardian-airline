@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Guardian Airline | Haute Security &amp; French Elegance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#c6c6c6",
+                        "surface-variant": "#333535",
+                        "tertiary-container": "#000000",
+                        "on-primary-container": "#757575",
+                        "error-container": "#93000a",
+                        "outline": "#988e90",
+                        "surface-tint": "#c6c6c6",
+                        "on-error-container": "#ffdad6",
+                        "on-surface": "#e2e2e2",
+                        "surface-container": "#1e2020",
+                        "on-primary-fixed-variant": "#474747",
+                        "inverse-on-surface": "#2f3131",
+                        "surface-bright": "#37393a",
+                        "background": "#121414",
+                        "primary-fixed": "#e2e2e2",
+                        "on-background": "#e2e2e2",
+                        "surface-container-high": "#282a2b",
+                        "tertiary": "#c8c6c5",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-secondary-fixed": "#241a00",
+                        "on-surface-variant": "#cfc4c5",
+                        "secondary-container": "#af8d11",
+                        "secondary-fixed-dim": "#e9c349",
+                        "secondary-fixed": "#ffe088",
+                        "on-secondary-container": "#342800",
+                        "on-secondary": "#3c2f00",
+                        "primary": "#c6c6c6",
+                        "surface": "#121414",
+                        "on-primary": "#303030",
+                        "surface-container-lowest": "#0c0f0f",
+                        "tertiary-fixed": "#e5e2e1",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-secondary-fixed-variant": "#574500",
+                        "inverse-primary": "#5e5e5e",
+                        "on-tertiary-container": "#767575",
+                        "secondary": "#e9c349",
+                        "surface-container-highest": "#333535",
+                        "on-tertiary": "#313030",
+                        "surface-container-low": "#1a1c1c",
+                        "on-error": "#690005",
+                        "primary-container": "#000000",
+                        "outline-variant": "#4c4546",
+                        "surface-dim": "#121414",
+                        "inverse-surface": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "section-gap": "160px",
+                        "unit": "8px",
+                        "margin-mobile": "24px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Hanken Grotesk"],
+                        "display-lg": ["Bodoni Moda"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "mono-technical": ["Hanken Grotesk"],
+                        "display-mobile": ["Bodoni Moda"],
+                        "headline-md": ["Bodoni Moda"],
+                        "body-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "300" }],
+                        "mono-technical": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "display-mobile": ["42px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+            font-family: 'Hanken Grotesk', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6, .display-font {
+            font-family: 'Bodoni Moda', serif;
+        }
+        .ghost-shadow {
+            box-shadow: 0px 20px 50px rgba(0,0,0,0.8);
+        }
+        .gold-border {
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .vault-layer {
+            background-color: #000000;
+        }
+        .concierge-layer {
+            background-color: #1A1A1A;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col relative overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-secondary-container/20 shadow-[0px_20px_50px_rgba(0,0,0,0.8)] hidden md:block">
+<div class="flex justify-between items-center max-w-[1440px] mx-auto px-margin-desktop py-6">
+<a class="font-display-lg text-headline-md tracking-tighter text-primary" href="#">
+                GUARDIAN AIRLINE
+            </a>
+<div class="flex space-x-8 font-label-caps text-label-caps">
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">Home</a>
+<a class="text-secondary border-b border-secondary pb-1 hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">About Guardian</a>
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">The Griffin's Promise</a>
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">Exclusive Services</a>
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">La Table du Griffon</a>
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">Destinations</a>
+</div>
+<a class="px-6 py-3 bg-white text-black font-label-caps text-label-caps rounded-DEFAULT hover:scale-105 transition-transform duration-300" href="#">
+                Request a Private Journey
+            </a>
+</div>
+</nav>
+<!-- Mobile Nav Header -->
+<header class="md:hidden fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-secondary-container/20 px-margin-mobile py-4 flex justify-between items-center">
+<a class="font-display-lg text-headline-md tracking-tighter text-primary" href="#">
+            GUARDIAN AIRLINE
+        </a>
+<button class="text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<!-- Main Canvas -->
+<main class="flex-grow pt-[120px] md:pt-[160px] pb-section-gap">
+<!-- Hero Section -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap relative">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-6 z-10">
+<h1 class="font-display-mobile md:font-display-lg text-display-mobile md:text-display-lg text-primary mb-8 leading-tight">
+                        Sanctuary in the Sky.
+                    </h1>
+<div class="w-24 h-px bg-secondary/50 mb-8"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-12">
+                        Rooted in the timeless elegance of French haute couture and the uncompromising precision of a private vault, Guardian Airline delivers an unparalleled travel experience for the world's most discerning individuals.
+                    </p>
+</div>
+<div class="md:col-span-6 relative h-[614px] md:h-[819px] w-full ghost-shadow concierge-layer gold-border overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-700 mix-blend-luminosity" data-alt="A striking, cinematic photograph of a highly exclusive, luxurious private jet interior. The cabin features deep charcoal velvet seating, subtle 1px gold metallic accents, and pristine white surfaces. The lighting is soft and moody, simulating twilight at 40,000 feet, casting elegant shadows that emphasize privacy and high-net-worth discretion. Minimalist editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqh3v2l9XnB5ssXZV6XJqmUGT-OMFsRoErbPZaCSdf63Ncr7LceTS7wPws9yLrasNufaws61K-iLYTrkx4avp6Z3MGX-qwwi8OwDNnKs2e9Qu4ElCbTnfBRGGVsuJWVfuq7E0aWCT6rSfvom1DB3t0DyJEA67BwLMkFLKKK9BwY_kea8887R0eHLuWzC9vY0J3-n8YxwFnHI5dw_FJFTkTUU5wMgRvVXVm_yYDQMIgJ9mQIvIR_1yT"/>
+</div>
+</div>
+</section>
+<!-- The Mission -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4 md:col-start-2 border-l border-secondary/20 pl-8">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Our Mission</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        To architect moments of absolute tranquility above the clouds. We merge rigorous security protocols with intuitive hospitality, ensuring that every journey is a seamless extension of your private domain. We do not just fly; we protect and pamper.
+                    </p>
+</div>
+<div class="md:col-span-5 md:col-start-7 mt-12 md:mt-0">
+<div class="relative h-[400px] w-full ghost-shadow concierge-layer gold-border">
+<img class="absolute inset-0 w-full h-full object-cover mix-blend-overlay" data-alt="An abstract, minimalist architectural shot of a sleek, dark aircraft wing cutting through the clouds against a deep, twilight sky. A thin streak of golden sunlight catches the metallic edge, emphasizing precision, speed, and absolute security. High contrast, vast negative space, luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCksalPLu37NVb-EiwEKG0W08JSgtr0JmzFfqWidZ29Td-31TuArx8Uy3Ivqmh0VhJ8uq3QItZs3LUvoEeAVotwiRHr5vddkoT3PD2eFVtwzO61hx-QLqneWQ9czupJIbE3ZVzkDZaw3ew9z2eF3r5DNUU7H49YvytX4KrymOSO0a4hdZ6F0cYserUC_Yjg9KayIvv8ZhmJ2fFnSKndj643bZiX2qj1D-eZnqR0Z7lfpmAOyooBNJ3y"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Philosophy (Bento Grid) -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">The Pillars of Guardian</h2>
+<div class="w-16 h-px bg-secondary/50 mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Security -->
+<div class="concierge-layer gold-border p-8 hover:bg-[#0D0D0D] transition-colors duration-500 group">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">shield</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Absolute Security</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Military-grade encryption and rigorously vetted personnel. Your itinerary remains a closely guarded secret, treated with the gravity of a sovereign state secret.
+                    </p>
+</div>
+<!-- Precision -->
+<div class="concierge-layer gold-border p-8 hover:bg-[#0D0D0D] transition-colors duration-500 group">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">my_location</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Surgical Precision</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Time is the ultimate luxury. Our logistical choreography ensures departures and arrivals occur with atomic clock accuracy.
+                    </p>
+</div>
+<!-- Hospitality -->
+<div class="concierge-layer gold-border p-8 hover:bg-[#0D0D0D] transition-colors duration-500 group">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">wine_bar</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">French Elegance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Anticipatory service informed by Parisian hospitality. Every detail, from the thread count to the vintage poured, is curated for refined tastes.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-secondary-container/10 w-full py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="md:col-span-4 mb-12 md:mb-0">
+<div class="font-display-lg text-headline-lg text-primary mb-8">
+                    GUARDIAN AIRLINE
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-100 hover:opacity-70">
+                    © 2024 GUARDIAN AIRLINE. ALL RIGHTS RESERVED. DISCRETION GUARANTEED.
+                </p>
+</div>
+<div class="md:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col space-y-4 font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Home</a>
+<a class="text-primary opacity-100 hover:opacity-70" href="#">About Guardian</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">The Griffin's Promise</a>
+</div>
+<div class="flex flex-col space-y-4 font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Exclusive Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">La Table du Griffon</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Destinations</a>
+</div>
+<div class="flex flex-col space-y-4 font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Travel Information</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Contact</a>
+</div>
+<div class="flex flex-col space-y-4 font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

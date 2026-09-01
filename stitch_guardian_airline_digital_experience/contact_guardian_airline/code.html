@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact - Guardian Airline</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&amp;family=Bodoni+Moda:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-fixed-dim": "#c6c6c6",
+                      "surface-variant": "#333535",
+                      "tertiary-container": "#000000",
+                      "on-primary-container": "#757575",
+                      "error-container": "#93000a",
+                      "outline": "#988e90",
+                      "surface-tint": "#c6c6c6",
+                      "on-error-container": "#ffdad6",
+                      "on-surface": "#e2e2e2",
+                      "surface-container": "#1e2020",
+                      "on-primary-fixed-variant": "#474747",
+                      "inverse-on-surface": "#2f3131",
+                      "surface-bright": "#37393a",
+                      "background": "#121414",
+                      "primary-fixed": "#e2e2e2",
+                      "on-background": "#e2e2e2",
+                      "surface-container-high": "#282a2b",
+                      "tertiary": "#c8c6c5",
+                      "on-primary-fixed": "#1b1b1b",
+                      "on-secondary-fixed": "#241a00",
+                      "on-surface-variant": "#cfc4c5",
+                      "secondary-container": "#af8d11",
+                      "secondary-fixed-dim": "#e9c349",
+                      "secondary-fixed": "#ffe088",
+                      "on-secondary-container": "#342800",
+                      "on-secondary": "#3c2f00",
+                      "primary": "#c6c6c6",
+                      "surface": "#121414",
+                      "on-primary": "#303030",
+                      "surface-container-lowest": "#0c0f0f",
+                      "tertiary-fixed": "#e5e2e1",
+                      "on-tertiary-fixed-variant": "#474746",
+                      "error": "#ffb4ab",
+                      "on-tertiary-fixed": "#1c1b1b",
+                      "tertiary-fixed-dim": "#c8c6c5",
+                      "on-secondary-fixed-variant": "#574500",
+                      "inverse-primary": "#5e5e5e",
+                      "on-tertiary-container": "#767575",
+                      "secondary": "#e9c349",
+                      "surface-container-highest": "#333535",
+                      "on-tertiary": "#313030",
+                      "surface-container-low": "#1a1c1c",
+                      "on-error": "#690005",
+                      "primary-container": "#000000",
+                      "outline-variant": "#4c4546",
+                      "surface-dim": "#121414",
+                      "inverse-surface": "#e2e2e2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "32px",
+                      "section-gap": "160px",
+                      "unit": "8px",
+                      "margin-mobile": "24px",
+                      "margin-desktop": "80px"
+              },
+              "fontFamily": {
+                      "label-caps": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg": [
+                              "Bodoni Moda"
+                      ],
+                      "headline-lg": [
+                              "Bodoni Moda"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "mono-technical": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-mobile": [
+                              "Bodoni Moda"
+                      ],
+                      "headline-md": [
+                              "Bodoni Moda"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.15em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "72px",
+                              {
+                                      "lineHeight": "80px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "300"
+                              }
+                      ],
+                      "mono-technical": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-mobile": [
+                              "42px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .form-input-bottom-border {
+            border: none;
+            border-bottom: 1px solid rgba(226, 226, 226, 0.4); /* on-surface at 40% */
+            background: transparent;
+            color: #e2e2e2;
+            border-radius: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .form-input-bottom-border:focus {
+            outline: none;
+            box-shadow: none;
+            border-bottom: 1px solid #e9c349; /* secondary */
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col font-body-md">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-secondary-container/20 shadow-[0px_20px_50px_rgba(0,0,0,0.8)]">
+<div class="flex justify-between items-center max-w-[1440px] mx-auto px-margin-desktop py-6">
+<div class="font-display-lg text-headline-md tracking-tighter text-primary">
+                GUARDIAN AIRLINE
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300" href="#">About Guardian</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300" href="#">The Griffin's Promise</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300" href="#">Exclusive Services</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300" href="#">La Table du Griffon</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300" href="#">Destinations</a>
+</div>
+<button class="hidden md:block px-6 py-3 border border-secondary text-secondary font-label-caps text-label-caps hover:bg-[#0D0D0D] transition-colors uppercase tracking-widest scale-95 active:scale-90 transition-transform">
+                Request a Private Journey
+            </button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[160px] pb-section-gap px-margin-desktop max-w-[1440px] mx-auto w-full grid grid-cols-12 gap-gutter">
+<!-- Header Section -->
+<div class="col-span-12 md:col-span-8 mb-24">
+<h1 class="font-display-lg text-display-lg text-primary mb-6">Begin Your Journey</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                “Your time is precious. Your security is paramount.”
+            </p>
+<div class="h-px w-24 bg-secondary mt-12 opacity-50"></div>
+</div>
+<!-- Contact Form Container (Left Column) -->
+<div class="col-span-12 md:col-span-7 bg-[#1A1A1A] border border-secondary/20 p-12 relative overflow-hidden group hover:bg-[#0D0D0D] transition-colors duration-500 shadow-[0px_20px_50px_rgba(0,0,0,0.8)]">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 relative z-10">
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-2">Full Name</label>
+<input class="form-input-bottom-border font-body-md text-body-md" placeholder="Enter your full name" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-2">Email Address</label>
+<input class="form-input-bottom-border font-body-md text-body-md" placeholder="Enter your email address" type="email"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-2">Company (Optional)</label>
+<input class="form-input-bottom-border font-body-md text-body-md" placeholder="Enter your company" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-2">Phone Number</label>
+<input class="form-input-bottom-border font-body-md text-body-md" placeholder="Enter your phone number" type="tel"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-2">Departure City</label>
+<input class="form-input-bottom-border font-body-md text-body-md" placeholder="City or Airport Code" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-2">Destination</label>
+<input class="form-input-bottom-border font-body-md text-body-md" placeholder="City or Airport Code" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-2">Preferred Travel Date</label>
+<input class="form-input-bottom-border font-body-md text-body-md" style="color-scheme: dark;" type="date"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-2">Number of Travelers</label>
+<input class="form-input-bottom-border font-body-md text-body-md" min="1" placeholder="e.g., 2" type="number"/>
+</div>
+<div class="flex flex-col md:col-span-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-2">Cabin Preference</label>
+<select class="form-input-bottom-border font-body-md text-body-md">
+<option value="light">Light Jet (Up to 6 Pax)</option>
+<option value="midsize">Midsize Jet (Up to 9 Pax)</option>
+<option value="heavy">Heavy Jet (Up to 14 Pax)</option>
+<option value="airliner">VIP Airliner (15+ Pax)</option>
+</select>
+</div>
+<div class="flex flex-col md:col-span-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-2">Message</label>
+<textarea class="form-input-bottom-border font-body-md text-body-md resize-none" placeholder="Any specific requirements or requests?" rows="4"></textarea>
+</div>
+<div class="md:col-span-2 mt-8">
+<button class="bg-primary text-tertiary-container font-label-caps text-label-caps px-8 py-4 uppercase tracking-widest hover:bg-surface-tint transition-colors w-full md:w-auto" type="submit">
+                        Submit Journey Request
+                    </button>
+</div>
+</form>
+</div>
+<!-- Headquarters Info & Visual (Right Column) -->
+<div class="col-span-12 md:col-span-4 md:col-start-9 flex flex-col gap-12">
+<div class="relative w-full h-80 overflow-hidden border border-secondary/20 shadow-[0px_20px_50px_rgba(0,0,0,0.8)]">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A cinematic, high-contrast photograph of a private aviation concierge desk in Paris. Minimalist aesthetic with deep blacks, stark white accents, and subtle gold details. The lighting is moody, highlighting the polished obsidian surfaces and a faint watermark of a griffin logo on a frosted glass partition." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDM7AVdVdYwdr4GcLh91BoSbH1tWibupcc6kqAMxmcIH2ktT3ek654FjUxa3lAjd7weniwy0WK8b_zYUUeMYzVX-77niOppqMHB0lhHdpXxZb4G12ZM1X9d8aJs_Cuf9HzVWNIWYJbYUganRlsWBS91hJj_uqt7huR1ckoT6J1vHFNdSErtP9oDtSoGAdV4FUEZk6WBxl2auPSw5bhpqxMeos1Q_-f170g2fhuG2djK_kLqxQOj4MMc')"></div>
+</div>
+<div class="flex flex-col gap-8 p-8 border border-[#1A1A1A] hover:bg-[#1A1A1A] transition-colors duration-500 group">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Headquarters</h3>
+<div class="font-mono-technical text-mono-technical text-on-surface-variant opacity-80 uppercase">
+                        Paris, France
+                    </div>
+</div>
+<div class="h-px w-full bg-[#1A1A1A] group-hover:bg-secondary/20 transition-colors"></div>
+<div>
+<div class="font-label-caps text-label-caps text-secondary mb-2">Concierge Email</div>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors" href="mailto:concierge@guardianairline.com">concierge@guardianairline.com</a>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-secondary mb-2">Private Phone Line</div>
+<a class="font-mono-technical text-mono-technical text-on-surface hover:text-primary transition-colors" href="tel:+33180000000">+33 1 80 00 00 00</a>
+</div>
+</div>
+<!-- Atmospheric Shader (Visual depth) -->
+<div class="h-48 relative border border-[#1A1A1A]">
+
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-secondary-container/10">
+<div class="grid grid-cols-12 gap-gutter max-w-[1440px] mx-auto px-margin-desktop">
+<div class="col-span-12 mb-16">
+<div class="font-display-lg text-headline-lg text-primary mb-8">
+                    GUARDIAN AIRLINE
+                </div>
+</div>
+<div class="col-span-12 md:col-span-8 flex flex-wrap gap-x-8 gap-y-4 font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">About Guardian</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">The Griffin's Promise</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">Exclusive Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">La Table du Griffon</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">Destinations</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">Travel Information</a>
+<a class="text-primary opacity-100 hover:opacity-70" href="#">Contact</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-70" href="#">Terms of Service</a>
+</div>
+<div class="col-span-12 mt-16 font-body-md text-body-md text-secondary opacity-60">
+                © 2024 GUARDIAN AIRLINE. ALL RIGHTS RESERVED. DISCRETION GUARANTEED.
+            </div>
+</div>
+</footer>
+</body></html>

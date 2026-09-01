@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LA TABLE DU GRIFFON - Guardian Airline</title>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#c6c6c6",
+                        "surface-variant": "#333535",
+                        "tertiary-container": "#000000",
+                        "on-primary-container": "#757575",
+                        "error-container": "#93000a",
+                        "outline": "#988e90",
+                        "surface-tint": "#c6c6c6",
+                        "on-error-container": "#ffdad6",
+                        "on-surface": "#e2e2e2",
+                        "surface-container": "#1e2020",
+                        "on-primary-fixed-variant": "#474747",
+                        "inverse-on-surface": "#2f3131",
+                        "surface-bright": "#37393a",
+                        "background": "#121414",
+                        "primary-fixed": "#e2e2e2",
+                        "on-background": "#e2e2e2",
+                        "surface-container-high": "#282a2b",
+                        "tertiary": "#c8c6c5",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-secondary-fixed": "#241a00",
+                        "on-surface-variant": "#cfc4c5",
+                        "secondary-container": "#af8d11",
+                        "secondary-fixed-dim": "#e9c349",
+                        "secondary-fixed": "#ffe088",
+                        "on-secondary-container": "#342800",
+                        "on-secondary": "#3c2f00",
+                        "primary": "#c6c6c6",
+                        "surface": "#121414",
+                        "on-primary": "#303030",
+                        "surface-container-lowest": "#0c0f0f",
+                        "tertiary-fixed": "#e5e2e1",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-secondary-fixed-variant": "#574500",
+                        "inverse-primary": "#5e5e5e",
+                        "on-tertiary-container": "#767575",
+                        "secondary": "#e9c349",
+                        "surface-container-highest": "#333535",
+                        "on-tertiary": "#313030",
+                        "surface-container-low": "#1a1c1c",
+                        "on-error": "#690005",
+                        "primary-container": "#000000",
+                        "outline-variant": "#4c4546",
+                        "surface-dim": "#121414",
+                        "inverse-surface": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "section-gap": "160px",
+                        "unit": "8px",
+                        "margin-mobile": "24px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Hanken Grotesk"],
+                        "display-lg": ["Bodoni Moda"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "mono-technical": ["Hanken Grotesk"],
+                        "display-mobile": ["Bodoni Moda"],
+                        "headline-md": ["Bodoni Moda"],
+                        "body-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "300" }],
+                        "mono-technical": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "display-mobile": ["42px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.tertiary-container'); color: theme('colors.on-surface'); }
+        .ghost-shadow { box-shadow: 0px 20px 50px rgba(0,0,0,0.8); }
+        .vault-card { background-color: #1A1A1A; border: 1px solid rgba(212, 175, 55, 0.2); }
+        .vault-card:hover { background-color: #0D0D0D; }
+        .gold-stroke { border-color: rgba(212, 175, 55, 0.3); }
+    </style>
+</head>
+<body class="antialiased min-h-screen font-body-md text-body-md bg-tertiary-container selection:bg-secondary selection:text-tertiary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-secondary-container/20 shadow-[0px_20px_50px_rgba(0,0,0,0.8)]">
+<div class="flex justify-between items-center max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-6">
+<div class="font-display-lg text-headline-md tracking-tighter text-primary">GUARDIAN AIRLINE</div>
+<div class="hidden md:flex items-center space-x-8 font-label-caps text-label-caps">
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 duration-300" href="#">Home</a>
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 duration-300" href="#">About Guardian</a>
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 duration-300" href="#">The Griffin's Promise</a>
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 duration-300" href="#">Exclusive Services</a>
+<a class="text-secondary border-b border-secondary pb-1 scale-95 active:scale-90 transition-transform" href="#">La Table du Griffon</a>
+<a class="text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 duration-300" href="#">Destinations</a>
+</div>
+<button class="hidden md:inline-block bg-primary text-tertiary-container px-6 py-3 font-label-caps text-label-caps hover:scale-105 transition-transform duration-300 rounded-none">
+                Request a Private Journey
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-[120px]">
+<!-- Hero Section -->
+<section class="relative w-full h-[819px] flex items-center justify-center max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-tertiary-container/80 via-tertiary-container/40 to-tertiary-container z-10"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic, high-contrast photograph of an impeccably set dining table in a private jet cabin, dark charcoal moody atmosphere, single spotlight illuminating a pristine white porcelain plate with a delicate gold rim, French elegance, luxurious minimalism." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGqK-COEhp5anhZoIEnOPO8Q9tc-Jaug_HiU5UWHcyFGygarJpRgXIflOe9eTKF8vV2pxmqGl4j4at85I3h6DaDnNE-NFrYlhQkoPx8V2BT8F1PaNqzTjbUTFlGZ8RyPbOr0_Bwu9bKqRx_nfMwlGyW37pq_YzNzgFjkXnJ4xDyGQMmqI-qY2J6Ck5ZkbFbIANf9k05neo9hWGpKOUXSZnxyzBg_pNWGuKrE_dIADv45XtvhtH-ymc')"></div>
+</div>
+<div class="relative z-20 text-center max-w-4xl mx-auto flex flex-col items-center">
+<h2 class="font-label-caps text-label-caps text-secondary mb-8 tracking-[0.2em]">A Culinary Journey</h2>
+<h1 class="font-display-mobile md:font-display-lg text-display-mobile md:text-display-lg text-primary mb-12">LA TABLE DU GRIFFON</h1>
+<div class="w-[1px] h-24 bg-secondary/40 mb-12"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl text-center italic">
+                    "Every ingredient... meticulously vetted... flawlessly safe as it is exquisitely French."
+                </p>
+</div>
+</section>
+<!-- Menu Section -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Left Column: Menu Items -->
+<div class="md:col-span-7 space-y-32">
+<!-- L'Apéritif -->
+<div class="relative">
+<div class="flex items-center mb-12">
+<h3 class="font-headline-lg text-headline-lg text-primary mr-8">L'Apéritif</h3>
+<div class="flex-grow h-[1px] bg-secondary/20"></div>
+</div>
+<ul class="space-y-8">
+<li class="flex justify-between items-baseline group cursor-pointer">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">Caviar Service</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Beluga Reserve, Traditional Accompaniments</p>
+</div>
+</li>
+<li class="w-full h-[1px] bg-surface-variant/50"></li>
+<li class="flex justify-between items-baseline group cursor-pointer">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">Seared Foie Gras</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Caramelized Fig, Brioche Toast</p>
+</div>
+</li>
+<li class="w-full h-[1px] bg-surface-variant/50"></li>
+<li class="flex justify-between items-baseline group cursor-pointer">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">Truffled Asparagus Velouté</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">White Asparagus, Black Perigord Truffle</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Le Plat Principal -->
+<div class="relative">
+<div class="flex items-center mb-12">
+<h3 class="font-headline-lg text-headline-lg text-primary mr-8">Le Plat Principal</h3>
+<div class="flex-grow h-[1px] bg-secondary/20"></div>
+</div>
+<ul class="space-y-8">
+<li class="flex justify-between items-baseline group cursor-pointer">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">Tournedos Rossini</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Prime Filet, Black Truffle Madeira Sauce</p>
+</div>
+</li>
+<li class="w-full h-[1px] bg-surface-variant/50"></li>
+<li class="flex justify-between items-baseline group cursor-pointer">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">Brittany Lobster</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Butter Poached, Saffron Risotto</p>
+</div>
+</li>
+<li class="w-full h-[1px] bg-surface-variant/50"></li>
+<li class="flex justify-between items-baseline group cursor-pointer">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">Wild Mushroom Mille-Feuille</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Chanterelles, Puff Pastry, Thyme Jus</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Le Fromage & Le Dessert -->
+<div class="relative">
+<div class="flex items-center mb-12">
+<h3 class="font-headline-lg text-headline-lg text-primary mr-8">Le Fromage &amp; Le Dessert</h3>
+<div class="flex-grow h-[1px] bg-secondary/20"></div>
+</div>
+<ul class="space-y-8">
+<li class="flex justify-between items-baseline group cursor-pointer">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">L'Assiette de Fromages</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Artisan French Selection, Quince Paste</p>
+</div>
+</li>
+<li class="w-full h-[1px] bg-surface-variant/50"></li>
+<li class="flex justify-between items-baseline group cursor-pointer">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">The Golden Griffin Dome</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Dark Chocolate, Gold Leaf, Hazelnut Praline</p>
+</div>
+</li>
+<li class="w-full h-[1px] bg-surface-variant/50"></li>
+<li class="flex justify-between items-baseline group cursor-pointer">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">Tahitian Vanilla Bean Tart</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Shortcrust, Vanilla Mousseline</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<!-- Right Column: Visuals & La Cave -->
+<div class="md:col-span-4 md:col-start-9 space-y-16 mt-24 md:mt-0">
+<div class="vault-card p-8 relative ghost-shadow transition-colors duration-500">
+<div class="absolute -top-4 -left-4 w-8 h-8 border-t border-l border-secondary"></div>
+<div class="absolute -bottom-4 -right-4 w-8 h-8 border-b border-r border-secondary"></div>
+<div class="mb-8 h-64 overflow-hidden rounded-sm">
+<div class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-700" data-alt="A striking close-up of a meticulously plated Tournedos Rossini, resting on a dark slate plate. The lighting is dramatic and cinematic, highlighting the rich textures of the seared beef and the glistening truffle sauce. A thin 1px gold frame suggests the brand's aesthetic. High-end, luxurious food photography." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDt19YS41LoENPgwMkrAPCZ9JTuLvGjAbiTh-B0CaH7nUHYvSdZ5MFGVn9AqsUXZFWRmeFVou12VBFc5Q8OjaGWPmOmCbPuOIzNsJKTmnzoXAazlShbQFkIkThRxwp_k4wErw6tFxncke73GhFUxFW3f7xmJHSxQdQmEparC-wHMtVL0p0fAOiVbMxkj2qWFkyyII70yGJe80VQQsebYSoaJU2LGTDL9USdvOssqf82GCAkIzT7do1-')"></div>
+</div>
+<h3 class="font-headline-md text-headline-md text-secondary mb-6 text-center">La Cave</h3>
+<div class="w-full h-[1px] bg-secondary/20 mb-6"></div>
+<ul class="space-y-4 font-mono-technical text-mono-technical text-on-surface-variant text-center">
+<li>LOUIS ROEDERER CRISTAL</li>
+<li>CHÂTEAU MARGAUX</li>
+<li>MONTRACHET</li>
+<li>LOUIS XIII COGNAC</li>
+<li>THE MACALLAN 25 YEAR OLD</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-secondary-container/10">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="md:col-span-4">
+<div class="font-display-lg text-headline-lg text-primary mb-8">GUARDIAN AIRLINE</div>
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-4">© 2024 GUARDIAN AIRLINE. ALL RIGHTS RESERVED. DISCRETION GUARANTEED.</p>
+</div>
+<div class="md:col-span-2 md:col-start-7 flex flex-col space-y-4 font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">About Guardian</a>
+<a class="text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">The Griffin's Promise</a>
+<a class="text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Exclusive Services</a>
+</div>
+<div class="md:col-span-2 flex flex-col space-y-4 font-body-md text-body-md">
+<a class="text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">La Table du Griffon</a>
+<a class="text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Destinations</a>
+<a class="text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Travel Information</a>
+</div>
+<div class="md:col-span-2 flex flex-col space-y-4 font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Contact</a>
+<a class="text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

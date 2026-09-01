@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guardian Airline - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#c6c6c6",
+                        "surface-variant": "#333535",
+                        "tertiary-container": "#000000",
+                        "on-primary-container": "#757575",
+                        "error-container": "#93000a",
+                        "outline": "#988e90",
+                        "surface-tint": "#c6c6c6",
+                        "on-error-container": "#ffdad6",
+                        "on-surface": "#e2e2e2",
+                        "surface-container": "#1e2020",
+                        "on-primary-fixed-variant": "#474747",
+                        "inverse-on-surface": "#2f3131",
+                        "surface-bright": "#37393a",
+                        "background": "#121414",
+                        "primary-fixed": "#e2e2e2",
+                        "on-background": "#e2e2e2",
+                        "surface-container-high": "#282a2b",
+                        "tertiary": "#c8c6c5",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-secondary-fixed": "#241a00",
+                        "on-surface-variant": "#cfc4c5",
+                        "secondary-container": "#af8d11",
+                        "secondary-fixed-dim": "#e9c349",
+                        "secondary-fixed": "#ffe088",
+                        "on-secondary-container": "#342800",
+                        "on-secondary": "#3c2f00",
+                        "primary": "#c6c6c6",
+                        "surface": "#121414",
+                        "on-primary": "#303030",
+                        "surface-container-lowest": "#0c0f0f",
+                        "tertiary-fixed": "#e5e2e1",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-secondary-fixed-variant": "#574500",
+                        "inverse-primary": "#5e5e5e",
+                        "on-tertiary-container": "#767575",
+                        "secondary": "#e9c349",
+                        "surface-container-highest": "#333535",
+                        "on-tertiary": "#313030",
+                        "surface-container-low": "#1a1c1c",
+                        "on-error": "#690005",
+                        "primary-container": "#000000",
+                        "outline-variant": "#4c4546",
+                        "surface-dim": "#121414",
+                        "inverse-surface": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "section-gap": "160px",
+                        "unit": "8px",
+                        "margin-mobile": "24px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "label-caps": [
+                            "Hanken Grotesk"
+                        ],
+                        "display-lg": [
+                            "Bodoni Moda"
+                        ],
+                        "headline-lg": [
+                            "Bodoni Moda"
+                        ],
+                        "body-lg": [
+                            "Hanken Grotesk"
+                        ],
+                        "mono-technical": [
+                            "Hanken Grotesk"
+                        ],
+                        "display-mobile": [
+                            "Bodoni Moda"
+                        ],
+                        "headline-md": [
+                            "Bodoni Moda"
+                        ],
+                        "body-md": [
+                            "Hanken Grotesk"
+                        ]
+                    },
+                    "fontSize": {
+                        "label-caps": [
+                            "12px",
+                            {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.15em",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "display-lg": [
+                            "72px",
+                            {
+                                "lineHeight": "80px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "headline-lg": [
+                            "48px",
+                            {
+                                "lineHeight": "56px",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "body-lg": [
+                            "18px",
+                            {
+                                "lineHeight": "28px",
+                                "letterSpacing": "0.01em",
+                                "fontWeight": "300"
+                            }
+                        ],
+                        "mono-technical": [
+                            "14px",
+                            {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "500"
+                            }
+                        ],
+                        "display-mobile": [
+                            "42px",
+                            {
+                                "lineHeight": "48px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "headline-md": [
+                            "32px",
+                            {
+                                "lineHeight": "40px",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "body-md": [
+                            "16px",
+                            {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                            }
+                        ]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .ghost-shadow {
+            box-shadow: 0px 20px 50px rgba(0,0,0,0.8);
+        }
+        .gold-border {
+            border-color: rgba(212, 175, 55, 0.2);
+        }
+        .gold-border-solid {
+            border-color: #D4AF37;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-secondary-container/20 shadow-[0px_20px_50px_rgba(0,0,0,0.8)] hidden md:block">
+<div class="flex justify-between items-center max-w-[1440px] mx-auto px-margin-desktop py-6">
+<div class="font-display-lg text-headline-md tracking-tighter text-primary">
+                GUARDIAN AIRLINE
+            </div>
+<div class="flex items-center space-x-8">
+<a class="font-label-caps text-label-caps text-secondary border-b border-secondary pb-1 hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">About Guardian</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">The Griffin's Promise</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">Exclusive Services</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">La Table du Griffon</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-secondary-fixed-dim transition-colors hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">Destinations</a>
+</div>
+<button class="bg-on-surface text-surface font-label-caps text-label-caps px-6 py-3 rounded-none hover:bg-secondary hover:text-on-secondary transition-colors duration-300">
+                Request a Private Journey
+            </button>
+</div>
+</nav>
+<!-- Mobile TopNavBar (Simplified for fallback) -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-secondary-container/20 shadow-[0px_20px_50px_rgba(0,0,0,0.8)] md:hidden flex justify-between items-center px-margin-mobile py-4">
+<div class="font-display-mobile text-headline-md tracking-tighter text-primary">
+            GUARDIAN
+        </div>
+<button class="text-on-surface">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0" data-alt="A cinematic, ultra-high resolution photograph of a sleek, black private jet flying above a sea of clouds during a dramatic golden hour sunrise. The lighting is moody and luxurious, emphasizing the aircraft's aerodynamic lines and a subtle gold Griffin emblem on the tail. The overall aesthetic is dark, minimal, and highly exclusive, perfectly aligning with a high-end aviation brand's identity." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCEfci65QXHne6wRbknpMjehuH-nkidpW5K_ccyYXCkQwYJZVefsnAxjnKQgM43IyNtlGtevO-pirkqLdksDlhSL4W8ihLyonC9LGQGU-As-DgveozDV83daqffwwv_cKBJNHFeq7O__VNrZLqfy9NSbg5DHoivEYT6BPvzVYtME8NAUO5nNrOBQ7-_TMKcuSAD0v4IDtbvydaOnZf-N6KU9YpjSaMg1qjEIG_arrFGHtMC3wD8zXj5')"></div>
+<!-- Atmospheric overlay -->
+<div class="absolute inset-0 z-10 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+<div class="relative z-20 max-w-[1440px] w-full mx-auto px-margin-mobile md:px-margin-desktop text-center mt-20 md:mt-0">
+<h1 class="font-display-lg text-display-mobile md:text-display-lg text-on-surface mb-6 drop-shadow-2xl">
+                    Absolute Security. <br class="hidden md:block"/> Uncompromised Luxury.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">
+                    Experience discreet, rapid, and flawlessly secure travel without ever compromising on comfort.
+                </p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6">
+<button class="w-full md:w-auto bg-on-surface text-surface font-label-caps text-label-caps px-8 py-4 rounded-none hover:scale-105 transition-transform duration-300">
+                        Request a Private Journey
+                    </button>
+<button class="w-full md:w-auto border border-secondary text-secondary font-label-caps text-label-caps px-8 py-4 rounded-none hover:bg-secondary/10 transition-colors duration-300">
+                        Discover Guardian
+                    </button>
+</div>
+</div>
+</section>
+<!-- Brand Introduction -->
+<section class="py-section-gap max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter items-center relative">
+<div class="md:col-span-12 flex justify-center mb-16">
+<div class="w-px h-24 bg-secondary opacity-30"></div>
+</div>
+<div class="md:col-span-5 md:col-start-2 relative z-10">
+<h2 class="font-label-caps text-label-caps text-secondary mb-4 uppercase tracking-widest">A Sanctuary in the Sky</h2>
+<p class="font-display-lg text-headline-lg text-on-surface leading-tight">
+                    Based in the heart of France, Guardian Airline redefines premium aviation by merging impenetrable security with bespoke elegance.
+                </p>
+</div>
+<div class="md:col-span-5 md:col-start-8 mt-12 md:mt-0 relative">
+<div class="aspect-[3/4] w-full bg-surface-container-low border border-secondary/20 relative ghost-shadow p-4 group overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A detailed, close-up interior shot of a luxurious private jet cabin. The seats are crafted from premium black leather with subtle gold stitching. The lighting is soft and ambient, creating an atmosphere of deep privacy and exclusivity. A crisp white linen napkin and a crystal glass rest on a polished dark wood table, embodying a sophisticated French aesthetic within a highly secure environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBDoikO6f1hoA7_OdnYQRSccrUqzS0rgsfXQd3pfMZFKro3ut31xB4lTKOvwkNYaRLDS4l54WTfAd1Qq8Rj_T5gBb1ekKFakI8xJDqmQp5T52rOhPwvkZVI_m4gGpIjT8vMdIAZvsZsqFUG5RzjM0ZhZoUTxKJhbnyXAXIXCjHNrHO7adYOISsluSB4u_PBImNHw3EUs_LkVzyr7J7CDN7GOeTsFjv3ZsNt_2nzhrqVEjAfK3_jz3LZ')"></div>
+<div class="absolute inset-0 border border-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-500 m-4 pointer-events-none"></div>
+</div>
+</div>
+</section>
+<!-- Feature Cards (Bento-style layout) -->
+<section class="pb-section-gap max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex items-center gap-4 mb-16">
+<div class="h-px bg-secondary flex-grow opacity-20"></div>
+<span class="font-label-caps text-label-caps text-secondary">The Guardian Standard</span>
+<div class="h-px bg-secondary flex-grow opacity-20"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Card 1 -->
+<div class="bg-surface-container-low border border-secondary/20 p-8 ghost-shadow hover:bg-[#0D0D0D] transition-colors duration-500 group flex flex-col justify-between aspect-square">
+<div>
+<span class="material-symbols-outlined text-secondary text-3xl mb-6 group-hover:scale-110 transition-transform" data-icon="shield">shield</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Absolute Security</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                        Impenetrable protocols and vetting processes ensure your journey is a veritable fortress in the sky, prioritizing your safety above all else.
+                    </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low border border-secondary/20 p-8 ghost-shadow hover:bg-[#0D0D0D] transition-colors duration-500 group flex flex-col justify-between aspect-square">
+<div>
+<span class="material-symbols-outlined text-secondary text-3xl mb-6 group-hover:scale-110 transition-transform" data-icon="visibility_off">visibility_off</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Discreet Travel</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                        Complete anonymity from terminal to tarmac. Our operations are designed to shield you from the public eye at every touchpoint.
+                    </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low border border-secondary/20 p-8 ghost-shadow hover:bg-[#0D0D0D] transition-colors duration-500 group flex flex-col justify-between aspect-square">
+<div>
+<span class="material-symbols-outlined text-secondary text-3xl mb-6 group-hover:scale-110 transition-transform" data-icon="admin_panel_settings">admin_panel_settings</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Elite Protection</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                        Trained specialists accompany your journey, offering an invisible yet omnipresent layer of security tailored to your specific profile.
+                    </p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-low border border-secondary/20 p-8 ghost-shadow hover:bg-[#0D0D0D] transition-colors duration-500 group flex flex-col justify-between aspect-square">
+<div>
+<span class="material-symbols-outlined text-secondary text-3xl mb-6 group-hover:scale-110 transition-transform" data-icon="restaurant">restaurant</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Bespoke French Gastronomy</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                        Curated menus by acclaimed chefs, bringing the pinnacle of Parisian dining to altitude, paired with exclusive vintage selections.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-section-gap border-t border-secondary-container/10">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="md:col-span-4 flex flex-col">
+<div class="font-display-lg text-headline-lg text-primary mb-8">
+                    GUARDIAN AIRLINE
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-100 hover:opacity-70 mt-auto">
+                    © 2024 GUARDIAN AIRLINE. ALL RIGHTS RESERVED. DISCRETION GUARANTEED.
+                </p>
+</div>
+<div class="md:col-span-4 md:col-start-9 flex flex-col gap-4">
+<nav class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-primary opacity-100 hover:opacity-70 transition-colors" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">About Guardian</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">The Griffin's Promise</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Exclusive Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">La Table du Griffon</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Destinations</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70 mt-4" href="#">Travel Information</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Contact</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:text-secondary transition-colors opacity-100 hover:opacity-70" href="#">Terms of Service</a>
+</nav>
+</div>
+</div>
+</footer>
+</body></html>
